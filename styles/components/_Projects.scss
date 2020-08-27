@@ -1,0 +1,21 @@
+.projects{
+    height: 80vh;
+    width: 100vw;
+}
+
+.project-card{
+    transition: all 0.2s;
+}
+
+.project-card:hover{
+     transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 768px) {
+  .project-card{
+      transition: none;
+  }
+  .project-card:hover{
+      transform: none;
+  }
+}

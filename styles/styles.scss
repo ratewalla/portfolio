@@ -1,0 +1,32 @@
+@import './components/Header';
+@import './components/Footer';
+@import './components/Nav';
+@import './components/Projects';
+@import './components/About';
+
+
+html:not([data-scroll='0']){
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    // overflow-x: hidden;
+    &::-webkit-scrollbar {
+    display: none;
+    }
+}
+
+.hide-scrollbar {
+    /*FireFox*/
+    scrollbar-width: none;
+    /*IE10+*/
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+.hide-scrollbar::-webkit-scrollbar {
+    /*Chrome, Safari, Edge*/
+    display: none;
+}
