@@ -11,8 +11,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-image.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url("../../images/hero-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../../images/hero-image.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,7 +45,6 @@
   background-color: whitesmoke;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  
 }
 
 .hero .hero-button:hover {
