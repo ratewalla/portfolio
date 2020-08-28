@@ -1,7 +1,30 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
+require('isomorphic-fetch');
 
 
 function About() {
+
+  const [quote, setQuote] = useState('');
+
+  // quotes api
+
+  useEffect(() => {
+    fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    const randomQuote = Math.round(Math.random() * data.length - 1);
+    const quoteText = JSON.stringify(data[randomQuote].text);
+    const quoteAuthor = JSON.stringify(data[randomQuote].author);
+    const fullQuote = quoteText + " " + quoteAuthor;
+    setQuote(fullQuote);
+  });
+  }, [])
+
+
+
+
   return (
     <section className="text-gray-500 bg-gray-700 body-font" id="about">
       <div className="container px-5 py-24 mx-auto flex flex-col">
@@ -16,9 +39,10 @@ function About() {
                 </svg>
               </div>
               <div className="flex flex-col items-center text-center justify-center">
-                <h2 className="font-medium title-font mt-4 text-white text-lg">Rizwan Atewalla</h2>
+                <h2 className="font-medium title-font mt-4 text-white text-2xl">Rizwan Atewalla</h2>
                 <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                <p className="text-base text-gray-600">Web Developer</p>
+                <p className="text-base text-gray-600 text-lg">Web Developer</p>
+                <p className="italic text-sm">{quote}</p>
               </div>
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">

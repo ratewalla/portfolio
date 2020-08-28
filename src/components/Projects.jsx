@@ -4,15 +4,14 @@ function Projects() {
 
 
   return (
-  <section className="text-black bg-white body-font" id="projects">
+  <section className="text-black bg-white body-font projects" id="projects">
   <h1 className="text-5xl text-center">Projects</h1>
     <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Below are some of the projects I am working on. a full list can be found on my <a className="text-blue-500" href="https://github.com/ratewalla?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> profile.</p>
     </div>
-    <div className="flex flex-wrap -m-4">
 
+    <div className="flex flex-wrap -m-4">
     <div className="lg:w-1/3 sm:w-1/2 p-4 project-card text-center">
         <div className="flex relative">
           <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="./images/blog-project.png"/>

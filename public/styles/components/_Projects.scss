@@ -1,6 +1,6 @@
 .projects{
-    height: 80vh;
-    width: 100vw;
+    padding-top: 3rem;
+
 }
 
 .project-card{
@@ -8,10 +8,10 @@
 }
 
 .project-card:hover{
-     transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .project-card{
       transition: none;
   }
