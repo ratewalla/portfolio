@@ -36,6 +36,7 @@
 }
 
 .hero .hero-button {
+  margin-top: 15rem;
   display: block;
   color: black;
   width: 200px;
@@ -198,8 +199,7 @@
 }
 
 .projects {
-  height: 80vh;
-  width: 100vw;
+  padding-top: 3rem;
 }
 
 .project-card {
@@ -212,7 +212,7 @@
           transform: scale(1.1, 1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .project-card {
     -webkit-transition: none;
     transition: none;
