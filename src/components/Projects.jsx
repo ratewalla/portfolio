@@ -8,7 +8,7 @@ function Projects() {
   <h1 className="text-5xl text-center">Projects</h1>
     <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Below are some of the projects I am working on. a full list can be found on my <a className="text-blue-500" href="https://github.com/ratewalla?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> profile.</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Below are some of the projects I am working on. A full list can be found on my <a className="text-blue-500" href="https://github.com/ratewalla?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> profile.</p>
     </div>
 
     <div className="flex flex-wrap -m-4">
@@ -58,6 +58,19 @@ function Projects() {
         <p>Secret sharing App</p>
         <a href="https://riz-secrets-app.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="m-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow hover:bg-blue-500">Live Demo</button></a>
         <a href="https://github.com/ratewalla/node-express-registerlogin" target="_blank" rel="noopener noreferrer"><button className="m-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow hover:bg-green-500">Source</button></a>
+      </div>
+
+      <div className="lg:w-1/3 sm:w-1/2 p-4 project-card text-center">
+        <div className="flex relative">
+          <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="./images/portfolio.png"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-75">
+            <h1 className="title-font text-lg font-medium text-white mb-3">Portfolio</h1>
+            <p className="leading-relaxed text-white">My portfolio, created with React, using Tailwind Css.</p>
+          </div>
+        </div>
+        <p>Portfolio</p>
+        <a href="https://rizatewalla.co.uk/" target="_blank" rel="noopener noreferrer"><button className="m-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow hover:bg-blue-500">Live Demo</button></a>
+        <a href="https://github.com/ratewalla/portfolio" target="_blank" rel="noopener noreferrer"><button className="m-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow hover:bg-green-500">Source</button></a>
       </div>
 
       
